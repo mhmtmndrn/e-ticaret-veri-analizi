@@ -61,9 +61,8 @@ import matplotlib.pyplot as plt
 
 Proje dizininde terminal açarak:
 
-python proje.py
-
-komutunu çalıştırmanız yeterlidir.
+git clone https://github.com/mhmtmndrn/e-ticaret-veri-analizi.git 
+sonrasında dosyayı visual studio code ile çalıştırınız.
 
 ## Proje Yapısı
 
