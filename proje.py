@@ -18,7 +18,7 @@ plt.figure() #yeni grafik
 plt.pie( #pasta grafiği 
     sex_percent, 
     labels=sex_percent.index, #labels dilimlerimiz 
-    autopct="%.1f%%" #ondalık basamak gösterme
+    autopct="%.1f%%" #ondalık basamak gösterme 
 )
 plt.title("Cinsiyet Dağılımı") #başlık
 plt.tight_layout() #sıkışmayı engeller 
