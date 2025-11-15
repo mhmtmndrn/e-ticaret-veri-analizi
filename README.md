@@ -58,8 +58,12 @@ import matplotlib.pyplot as plt
    - En çok satılan 3 ürün açık ara 43524799 , 31516269 , 39833031 ürün ID'li 3 üründür.
    - Site bu ürünler için kampanya yapmış olabilir veya bu ürünler, bu dönem ihtiyacı olan ürünler olup daha fazla satılmış olabilir.
 ## Çalıştırma
+Terminali açarak kütüphaneler yüklü değil ise ;
+pip install pandas
+pip install numpy
+pip install matplotlib yazarak yüklemesi yapılmalı.
 
-Proje dizininde terminal açarak:
+terminali açarak:
 
 git clone https://github.com/mhmtmndrn/e-ticaret-veri-analizi.git 
 sonrasında dosyayı visual studio code ile çalıştırınız.
