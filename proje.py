@@ -10,22 +10,21 @@ customers = pd.read_csv("customer_details.csv")
 baskets["basket_date"] = pd.to_datetime(baskets["basket_date"], errors="coerce")
 
 # Cinsiyet Analizi------------------------------------------------------------------------
-filtered_customers = customers[customers["sex"].isin(["Male", "Female"])]#sadece male ve female aldım.
-sex_counts = filtered_customers["sex"].value_counts()
-sex_percent = (sex_counts / sex_counts.sum()) * 100
+filtered_customers = customers[customers["sex"].isin(["Male", "Female"])]#sadece male ve female aldım. isin fonk. listenin içinde olup olmadığını kontrol eder.
+sex_counts = filtered_customers["sex"].value_counts() #value_counts değerin kaç kez tekrarlandığını bulunduğunu sayar.
+sex_percent = (sex_counts / sex_counts.sum()) * 100 #Her cinsiyetin sayısı/Toplam kişi sayısı * 100= male=%^77 female=%23 gibi 
 
-plt.figure()
-plt.pie(
-    sex_percent,
-    labels=sex_percent.index,
-    autopct="%.1f%%"
+plt.figure() #yeni grafik
+plt.pie( #pasta grafiği 
+    sex_percent, 
+    labels=sex_percent.index, #labels dilimlerimiz 
+    autopct="%.1f%%" #ondalık basamak gösterme
 )
-plt.title("Cinsiyet Dağılımı")
-plt.tight_layout()
-plt.show()
+plt.title("Cinsiyet Dağılımı") #başlık
+plt.tight_layout() #sıkışmayı engeller 
 
 #terminal çıktısı
-print("\nCinsiyet Dağılımı \n")
+print("\nCinsiyet Dağılımı \n") 
 
 for c in sex_counts.index:
     adet = sex_counts[c]
@@ -58,7 +57,6 @@ plt.xlabel("Yaş")
 plt.ylabel("Kişi Sayısı")
 plt.xticks(range(10, 85, 5))
 plt.tight_layout()
-plt.show()
 
 print("\nYaş Dağılımı\n")
 
@@ -88,7 +86,7 @@ plt.xlabel("Tarih")
 plt.ylabel("Toplam Satış")
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.tight_layout()
-plt.show()
+
 #Günlük toplam satış----------------------------------------------
 # En çok satış yapılan 10 gün-----------------------------------
 # Günlük satış 
