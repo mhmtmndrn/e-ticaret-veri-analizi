@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
    - Pie chart ile görselleştirilmiştir.
    - Sonuçlar terminale yazdırılmıştır.
 
-2. Yaş Dağılımı (10–80 Arası)
+2. Yaş Dağılımı
    - 10 yaş altı ve 80 yaş üstü veriler dahil edilmemiştir.
    - 5’er yıllık yaş aralıkları oluşturulmuştur.
    - Histogram grafiği çizilmiştir.
